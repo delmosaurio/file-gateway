@@ -1,0 +1,24 @@
+{
+  "name": "file-demand",
+  "version": "0.0.0",
+  "description": "Optimize the apps with multiple data files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/delmosaurio/file-demand.git"
+  },
+  "keywords": [
+    "file",
+    "config",
+    "demand"
+  ],
+  "author": "Delmo <dcardev@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/delmosaurio/file-demand/issues"
+  },
+  "homepage": "https://github.com/delmosaurio/file-demand"
+}
