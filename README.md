@@ -24,7 +24,7 @@ fd.config({
 		expire: ((1000 * 60) * 2 ),  		// cache expired millisecond (2 minutes)
 		length: 20						    // 20 files at same time
 	},
-	etend: true,
+	extend: true,
 	encoding: 'utf-8'
 })
 
@@ -77,7 +77,7 @@ fd.config({
 ])
 
 // initialize
-.init(true)
+.init(true // extend currents json files)
 
 fd.setSync("data", "file1.json", { val: "val"}, {json: true})
 fd.setSync("data", "file2.json", { val2: "val2"}, {json: true})
