@@ -1,6 +1,6 @@
 {
   "name": "file-demand",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "Optimize the apps with multiple data files",
   "main": "index.js",
   "scripts": {
