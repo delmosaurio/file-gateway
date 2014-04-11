@@ -11,7 +11,7 @@ fg.config({
 	process: true, 					// check the nodejs process
 	cache: {
 		expire: ((1000 * 60) * 2 ),  		// cache expired millisecond (2 minutes)
-		length: 20							// 20 files at same time
+		length: 1							// 20 files at same time
 	},
 	extend: true,
 	encoding: 'utf-8'
@@ -89,3 +89,7 @@ console.log(fs.readFileSync("./data/config.json", "utf-8"))
 
 console.log( fg.getSync("data", "file1.json") )
 console.log( fg.getSync("data", "file2.json") )
+
+setTimeout(function(){
+	console.log("end")
+}, 5000)
