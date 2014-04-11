@@ -10,6 +10,26 @@ Installation at npm
 npm install file-gateway
 ```
 
+## Modes
+
+**static**  
+
+Writed one time if not exists at init can't be setted
+
+**dynamic** 
+
+Not save on setted, save on expiration or process exit
+
+**cache**   
+
+Always save on setted, remains in memory, dispose on expiration
+
+**temp** 
+
+Always save on setted, NO remains in memory
+
+------------------------------
+
 sample
 
 ```js
@@ -20,7 +40,7 @@ var FileGateway = require('./lib/fg')
 var fg = new FileGateway('./data')
 
 fg.config({
-  process: ['dynamic'],           // check the nodejs process
+  process: true,                  // check the nodejs process
   cache: {
     expire: ((1000 * 60) * 2 ),   // cache expired millisecond (2 minutes)
     length: 20                    // 20 files at same time

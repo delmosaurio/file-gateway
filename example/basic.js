@@ -1,11 +1,14 @@
 
-var FileGateway = require('./lib/fg')
+var FileGateway = require('../lib/fg')
   , fs = require('fs')
+  , mkdirp = require('mkdirp')
+
+mkdirp.sync("./data")
 
 var fg = new FileGateway('./data')
 
 fg.config({
-	process: ['dynamic'], 					// check the nodejs process
+	process: true, 					// check the nodejs process
 	cache: {
 		expire: ((1000 * 60) * 2 ),  		// cache expired millisecond (2 minutes)
 		length: 20							// 20 files at same time
