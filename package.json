@@ -1,6 +1,6 @@
 {
   "name": "file-gateway",
-  "version": "0.0.21",
+  "version": "0.0.23",
   "description": "Optimize the apps with multiple data files",
   "main": "index.js",
   "scripts": {
